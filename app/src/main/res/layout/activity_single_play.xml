@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/mainLogoInSoloGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/single_play" />
+
+    <LinearLayout
+        android:id="@+id/pole"
+        android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:layout_below="@id/mainLogoInSoloGame"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/buttonSingle1"
+                android:onClick="buttonSingle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/tic_tac_button_empty" />
+
+            <ImageView
+                android:id="@+id/buttonSingle2"
+                android:onClick="buttonSingle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/tic_tac_button_empty" />
+
+            <ImageView
+                android:id="@+id/buttonSingle3"
+                android:onClick="buttonSingle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/tic_tac_button_empty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/buttonSingle4"
+                android:onClick="buttonSingle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/tic_tac_button_empty" />
+
+            <ImageView
+                android:id="@+id/buttonSingle5"
+                android:onClick="buttonSingle5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/tic_tac_button_empty" />
+
+            <ImageView
+                android:id="@+id/buttonSingle6"
+                android:onClick="buttonSingle6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/tic_tac_button_empty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/buttonSingle7"
+                android:onClick="buttonSingle7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/tic_tac_button_empty" />
+
+            <ImageView
+                android:id="@+id/buttonSingle8"
+                android:onClick="buttonSingle8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/tic_tac_button_empty" />
+
+            <ImageView
+                android:id="@+id/buttonSingle9"
+                android:onClick="buttonSingle9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/tic_tac_button_empty" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/turn"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pole"
+        android:layout_centerHorizontal="true"
+        android:text="X - human O - AI"
+        android:fontFamily="@font/nunito"
+        android:textColor="@color/white"
+        android:textSize="45sp"/>
+<LinearLayout
+    android:id="@+id/layoutCounter"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/turn"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/xWins"
+        android:layout_marginStart="30dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/turn"
+        android:text="X wins - 0"
+        android:fontFamily="@font/nunito"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/oWins"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/turn"
+        android:text="0 wins - O"
+        android:fontFamily="@font/nunito"
+        android:textColor="@color/white"
+        android:layout_marginEnd="30dp"
+        android:textSize="30sp" />
+
+</LinearLayout>
+    <TextView
+        android:onClick="restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press here to restart"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/layoutCounter"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
